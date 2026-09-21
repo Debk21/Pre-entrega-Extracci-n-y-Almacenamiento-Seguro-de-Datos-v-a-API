@@ -2,13 +2,13 @@
 
 ## Descripción
 
-Este proyecto realiza la extracción de datos desde una API pública mediante una solicitud HTTP GET, procesa la información obtenida y la almacena en un archivo CSV estructurado.
+En este proyecto realicé la extracción de datos desde una API pública mediante una solicitud HTTP GET, procesé la información obtenida y la almacené en un archivo CSV.
 
 El objetivo es aplicar un flujo básico de extracción, transformación y almacenamiento de datos utilizando Python.
 
 ## API utilizada
 
-Se utiliza la API pública **JSONPlaceholder**:
+Utilicé la API pública **JSONPlaceholder**:
 
 `https://jsonplaceholder.typicode.com/posts`
 
@@ -34,7 +34,7 @@ El archivo `.env` está incluido en `.gitignore` para evitar subir variables de 
 
 ## Instalación
 
-Instalar las dependencias necesarias ejecutando:
+Instalé las dependencias necesarias ejecutando:
 
 ```bash
 py -m pip install -r requirements.txt
@@ -48,11 +48,11 @@ Para ejecutar el programa:
 py main.py
 ```
 
-El script realiza una solicitud GET a la API, obtiene los datos en formato JSON y los transforma en un DataFrame de Pandas.
+En el script realizo una solicitud GET a la API, obtengo los datos en formato JSON y los transformo en un DataFrame de Pandas.
 
 ## Transformación y almacenamiento
 
-De la respuesta de la API se seleccionan los siguientes campos:
+De la respuesta de la API seleccioné los siguientes campos:
 
 * `userId`
 * `id`
@@ -72,6 +72,4 @@ El programa utiliza `try/except` y `response.raise_for_status()` para detectar y
 
 ## Seguridad
 
-El archivo `.env` no se incluye en el repositorio gracias a la configuración de `.gitignore`.
-
-Esto permite separar la configuración del código fuente y evitar publicar información que pudiera ser sensible en otros proyectos que utilicen credenciales o claves de API.
+El archivo `.env` no se incluye en el repositorio gracias a la configuración de `.gitignore`. Esto permite separar la configuración del código fuente y evitar publicar información que pudiera ser sensible en otros proyectos que utilicen credenciales o claves de API.
